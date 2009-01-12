@@ -1,0 +1,122 @@
+@jan 12, 2008
+
+Data Mining
+  data - facts
+    examples
+    errors
+    missing parts
+  information
+    patterns
+    expectations
+
+process of abstraction (making a model, hiding details) that looks for patterns in data, patterns that are useful
+  - these algorithms must be robust
+  - must be automatic
+
+patterns
+  - allows prediction for future situations
+  - allows understanding & explanation of the situation
+    - structural description of the data
+      - rules
+      - decision tree
+
+DM book
+  - ch1. intro
+  - ch2. I/O
+  - ch3. knowledge representation
+  - ch4. DM algorithms
+  - ch5. evaluations of the results
+  - ch6. DM algorithms in details
+  - ch7. data preprocessing
+    - missing data
+    - discretization
+    - attributes (features of the data) selection
+  - ch8. future applications
+
+part 2 - Pracical running - Waikato Environment for knowledge analysis
+
+Examples of current research applications of DM
+  - in vitro fertilization (London)
+    after the eggs are taken and fertilized, you need to process which 60 features are desireable
+  - dairy farming in NZ
+    millions of cows which have to be selected each year and 1/5 go to the butcher, 4/5s keep and there are 700 features which are used to make that decision.
+    DM captures the knowledge of succesful farmers and transfer to others
+----
+
+We know possess terabytes of data, which is easy to store, but there is a gap between understanding.
+
+Contact lens data:
+  you get some features, called attributes, like
+    age, spectacle prescription, astigmatism, tear production rate, recommended lenses
+      young, myope, no, reduced, none
+      young, ", no, normal, soft
+      ", ", yes, reduced, none
+      ", ", ", normal, hard
+      ", hypermyope, no, normal, hard
+
+    simplistic, since *all* possible rows are present, and there are no errors and no missing values
+    3 ages, 2 spectacles, two options for astimatism, two for tear production, and two for lenses
+    3 * 2 * 2 * 2 = 24 rows
+
+    applying DM -> summarization of the table
+    Example rules generated
+      - if (tear prod rate = reduced) then rec = none
+	else if (age = young && astigmatism = no) then rec = soft
+
+
+Weather problem:
+  First four are independent variables, attributes.
+  Outlook, Temperature, Humidity, Windy, Play
+    sunny, hot, high, false, no
+    ", ", ", true, no
+    overcast, ", ", false, yes
+    raining, mild, ", false, yes
+    ", cool, normal, false, yes
+
+    3 * 3 * 2 * 2 = 36 possible combinations
+  
+  Set of rules learned
+    if (outlook = sunny and humidity = high) then play = no
+    if (outlook = overcast) then play = yes
+    if (humidity = normal) then play = yes
+    if (none of the above) then play = yes
+    
+    if we change temperature + humidity to numeric values
+      -> numeric-attribute problem
+	mixed attribute problem
+
+      One rule might be like
+      if (outlook = sunny && humidity > 83) then play = no
+
+Classification rules - predict the target attribute's class
+Association rules - rules that associate any attributes
+  eg. if (temp = cool) then humidity = normal
+      if (humidity = normal and windy = false) then play = yes
+      if (outlook = sunny and play = no) then humidity = high
+	these are 100% correct + apply to 2 or more cases
+	there are ~60 association rules 100% right applying to >= 2 cases
+
+  The contact lens problem -> 9 classification rules that summarize the table 
+  another structural description is a decision tree:
+    tear prod rate (reduced, normal)
+      reduced - none
+      normal - astimagtism(no, yes)
+	no - soft
+	yes - spectacle prescription(myope, hypermyope)
+	  myope - hard
+	  hypermyope - none
+  
+A numeric data set - Iris classification in 1930's by Fisher
+row	sepal length	sepal width	petal length	petal wdith	type
+1	5.1		3.5		1.4		0.2		Iris setuse
+...
+51	7.0		3.2		4.7		1.4		Iris versicolor
+...
+150
+
+  Rules:
+    if petal lenght < 2.4 then Iris Setuse
+    if sepal width < 2.10 then Iris versicolor
+    if sepal width < 2.45 and petal length < 4.55 then I. versicolor
+
+
