@@ -222,4 +222,73 @@ The Nazi Party
 
 Next week on monday, the initial victories of Germany.
 
-    
+
+@jan 19
+
+the blitzkrieg (lightning war) from Poland to Russia 1939-1941
+  military doctrine implemented by .de
+  innovative use of tanks and aircraft, having appeared first in ww1. Initially they didn't do too well, as they were very slow. Post war improvement in technology allowed vast improvements in aircraft and tanks.
+  
+  Foundation of blitzkrieg
+    Initially did not believe in future of the tank, but in ww1 were the first to introduce the idea of mobile warfare, as that war was characterized by static fronts.
+
+    Elite "stormtrooper" infantry units in ww1. The idea behind them was speed and the element of surprise. If they could actually quickly surprise their enemies they could be successful at breaking the front and winning the war.
+    Concentration - the idea that lots of tanks in one unit they become harder to defeat.
+
+    Problem: speed & surprise is hard when you mostly have men on foot. 
+
+    In 1930s General Guderian became one of the main bliz proponents, writing Achtung Panzer where he argues that a high concentration of fast moving tanks could break through enemy lines. 
+
+    The Panzer divisions were meant to be a highly mobile miniature army, placing commanders close to the front, allowing them to be more flexible.
+  
+  The Invasion of Poland: the german plan
+    Idea that the blitz was impl early on the war, but in fact was not initially welcomed by the high command or hitler, being highly skeptical.
+    It was only at the last minute before the beginning of the invasion that it got adopted, becoming military doctrine only after the collapse of france.
+
+    Sept 1 1939 .de invades Poland.
+      Hitler felt that .de's strategic position was pretty good and that it was the right time to do it. Looking at the map, he got rid of the Czechs and signed a pact of non aggression with Russia, aiming to divide poland into two. Only significant challenge would come from Fr & UK, and he thought they would not move quickly, and that the US had no intention to intervene in Europe.
+      Still a huge gamble on Hitler's part. .de was militarily strong but unable to wage a long lasting war; economically .de was no match for Fr & UK.
+
+    The Polish plan
+      Initially the pl army looked strong on paper, 1 million strong, but in reality Poland's flatness and was surrounded by points from which the germans can invade. 
+      The Poles placed most of their troops at the border, to protect the rest of the country, but unfortunately for them they got screwed by the speed of the blitz.
+
+    Blitzkrieg applied to Poland:
+      No war declaration, and due to UK & Fr pressure Pl wasn't fully mobilised.
+      Air force was the most important supporting element, bombing cities and civilians.
+      The armies were mismatched, as Poles were limited to cavalry units.
+
+    The invasion of France
+      Invasion of Pl didn't say much, as their army wasn't that advanced. Sure we won there, but what about Fr? Fr at the time had the reputation of having the most powerful army in the world.
+
+      Proved to be the most humiliating defeat in Fr history, as it took .de less time than it took to defeat Poland.
+      Why did it happen?
+	1919-1930
+	  During the 20s, Fr is mostly preoccupied by its security, being concerned with Germany rising once again. Not as economically powerful or as populous.
+	  In 1914 they allied with Russia, seeking to open another front on .de's eastern front.
+	  Post ww1, chance of allying with Russia is nil. Seeking more alliances, they sign mil alliances w/Czechs, Pl
+
+	  National mindset over the years migrated from an offensive strategy into a defensive mindset.
+	  "The object of our mil org is to protect our borders and defend our overseas territories" - 1927
+
+	  By 1939 fr army was very flawed, with a paralyzed high command and contradictory political interventions. They were also suffering a moral crisis due to ww1 losses (1.4 million young men), where they were not prepared to fight yet another long war.
+
+	1930-1939
+	  Germany is obv. a threat again.
+	  Unable to win a war alone, they build the maginot line, a line of fortification built between 1930-1935. However, they only built it along the german border, running out of money just before they hit the border along belgium.
+
+	French army 1939-1940
+	  After invasion of Pl, Fr PM asked his commanders - are we ready to fight? Yes, but only a defensive war, beginning a misunderstanding.
+	  Looking very impressive on paper, unfortunately they coul only gather 1.5 million.
+	  While in 1918 they had the largest airforce, but by 1939 it was completely obsolete.
+	  Very scattered decision making process, detached from the front line.
+	  Faulty mil doctrine - concept of 'methodical battle'. Instead of autonomous, small tank divisions, they scattered tanks around the battlefield to support infantry.
+	  Faulty plan around the Dyle; thinking protected by the maginot line and thinking they had an impassable border with luxembourg, when they invaded through .be they would be met with top French units. Except, in Jan 1940 Gen. Manstein introduces a different invasion route and hit them at the most vulnerable point in the Ardennes, despite difficult terrain.
+	  Caught by surprise in the ardenne, they encircled the french army stuck in Belgium and marched on Paris. 4 weeks post invasion they sign armistice.
+
+	Explaining .de victory
+	  The greatest german weapon was surprise, attacking where they wre not supposed to.
+	  fr unable to quickly adapt.
+      
+      Operation Barbarossa
+	With the success of the French invasion. the blitz becomes std mil doctrine and decide it'd be a good idea to fuck with the USSR.
