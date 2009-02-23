@@ -32,3 +32,59 @@ architecture of participation
 service syndication
 democratic vs centralized
 social networking
+
+
+---
+
+our project seeks to collect a wide range of user metrics and information in order to provide a novel way to rank and visualize content that is newsworthy or interesting to the user. We can achieve this etc etc etc.
+
+
+-- in the future our system could always provide a personalized view to news and newsworthy items.
+
+
+missing from feature list
+
+data collection engine
+ - story views collecting data from
+    - clicks, pageviews
+    - ignored articles
+    - estimated read percentage (how long they are on the page/length of text)
+    - number of comments, commenting rate
+    - comment contention (thread depth)
+
+Page placement algorithm
+  tweakable factors, higher the number 
+  decay over time
+  score formula: (1/T)(X*clicks + Y*ignores + ...)
+
+
+
+  --
+
+
+  ch 1 -5
+  rss - build feed
+  lect 1 - multiple choice short answer
+  svg - coding question
+  write js
+  css
+  assignment 1, dojo
+
+  complete program
+
+  xhr from lecture, zip code app
+  ex1 build contact list and let user click an id to show the info without refreshing page, some detail shows up
+  xhr AND dojo
+
+  js + separate html
+  ex 2 - instant edit individua, click on a table element and edit the textual content in real time.
+
+  ex3 form auto completion like the zip code example, no server side script
+
+  ex 4 click on image to load the next from the array using xhr and dojo, also know random #s
+
+  ex 5 use js and xhtml to build diff rss feeds which may include different end content
+
+  ex6 fully understand gmaps
+
+  ex7 benefits of svg and all the examples in lec 6, priority zip example

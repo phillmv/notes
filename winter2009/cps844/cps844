@@ -125,3 +125,44 @@ Oh god it's like impossible to reach this class on time.
 
 PRISM - a simple covering algorithm for classification rules
 man he's still taking about it? or something?
+
+---
+@feb21
+midterm
+chapters 1,2,3,4,5(part) short answer plus questions like the quiz.
+
+chapter 5 eval
+
+for comparison of machine learning algorithms
+  for assessment of one algorithm on a dataset
+
+    error = wrong classification for a particular instance
+    error rate = #errors / # instances
+
+    measure error rate - training set -> "substitution" error rate
+				      - not a good predictor of how
+				      the model will do on new data
+    
+    better to measure error rate on new test data
+      not involved at all in the training
+    if lots of data, no problem, just split it into
+	- training set -> initial model
+	- [validation set] -> adjust parameters
+	- test set -> measure error rate
+
+    if not so much data so then we use cross validation
+
+	  A B C
+data set
+      3 way partition
+      train with | test with
+      A, B		C
+      B, C		B
+      B, C		A
+
+      thus we tested every instance exactly once
+      count total errors/# instances
+
+      empirically & theoretically
+
+I need glasses I can't actually see the right side of the board.
