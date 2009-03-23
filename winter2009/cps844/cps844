@@ -167,4 +167,31 @@ data set
 
 I need glasses I can't actually see the right side of the board.
 
+@mar 
 
+quadratic loss function
+
+information loss function
+  can use laplace estimators
+
+which to use?
+  both work in that the loss is minimal when the predicted prob equal the true prob
+    eg. consider a test instance of class 2 and different predictions of four classes
+  partly a mtter of taste
+
+Chapter 5.7
+  Counting the cost
+
+  Sometimes the cost of error is not uniform over the classes, as we've been asuming
+    predicting when a cow is in heat, predicting never is right 97% of the time, but is not useful
+
+    similarly in loan decisions, the cost of lending to a defauler is greater than the cost of refusing a loan to a nondefaulter
+
+    in oil slick detection problem, the cost of missing a real slick is greater than the cost of a false alarm
+
+  Confusion matrix for three classes
+
+  Overall success rate = diagonal sum / no. test instances
+
+  but consider a random learning method that predicts the same number of a's, b's, c's and just in proportion to the actual number
+    -> Kappa statistic
