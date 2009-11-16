@@ -1,0 +1,269 @@
+#sept 14
+
+
+kerckhoffs principle
+
+symmetric key
+  - need it for both encrypt and decrypt
+asymetric/public key
+
+
+symmetric key
+  stream cipher
+    encrypt a video streaming right thru, buffering is expensive
+
+  block cipher
+    take a chunk, process it
+
+Classical cryptographic primitives
+  substitutions
+    codebooks - words mapped to sets of strings and replaced.
+    you don't want to have a huge book, you have to have a corresponding map of blocks.
+      why not do single char substitution?
+      simplest is simple substitution
+	shift letters down the alphabet
+	'caesar's cipher'
+      
+
+      What can Eve do?
+	Assuming they know the cipher text
+
+	'computationally secure' systems: these for which the best known algo to attack it would take a LARGE # of ops
+
+	We can brute force it; try every possible key until we yield a result. Only 26 possible keys.
+
+  Key space has to be very large.
+  But how large?
+    This will be revisited.
+    2^128, etc.
+
+  A shift cipher is pretty weak; how can we make it harder?
+  multiple shift ciphers?
+
+
+#sept 22
+
+
+every cipher should have confusion, diffusion
+diffusion - where a small change in plain results in a large difference in a large change in cipher
+
+
+hill's cipher
+  use "m" liner combinations of plantext bits to produce on bit of ciphertext (matrix multiplication)
+  reduce things into blocks, encrypt it
+  1 bit change in plaintext -> 2 bit change in cipher
+
+
+Vigenere cipher does not have a good confusion
+however the hill cipher in the prev example has a 'better' confusion property, each ciphertext bit depends on 2 bits of key
+
+DES
+  NBS call for public enc algo
+  - high level of sec
+  spec'ed
+  publishable
+  available to everyone
+  must be cheap to implement
+
+
+Work of Shannon
+
+Iterative ciphers
+Product ciphers
+
+
+Design params:
+  the larger the block (esp the key) greater the sec
+
+  however the larger block also means slower in terms of speed
+
+  DES uses 64 bits, AES uses 128-256
+
+  number of rounds typically a larger number of rounds results in increased sec but a slower cryptosystem
+
+  subkey generation algo and round function should be complex
+  enc/dec speed should be reasonably fast
+  it should be easy to analyze
+
+lookup: 'fips46-3' DES standard.
+
+#oct21
+
+a|b b is a divisor of a
+'a divides b'
+prime: only 1 and p can divide p
+
+factoring out a prime:
+  difficult
+
+  'prime decomposition of a number' is considered hard
+
+what if we have an um that divides 2 diff numbers?
+  a|b and a|c -- common divisor for b c
+  b|d and b|e b -> common multiple of abe
+
+  2|8 and 2|20 --> CD
+  8|40 20|40 --> CM
+
+  is there a greatest common divisor?
+  8 = 2^3
+  20 = 2^2 * 5
+  gcd(8,20) = 4
+  LargestCM(8,20)=40
+
+  if we know the prime decomposition it is easy
+
+  we will have to calc gcd for v. large numbers
+
+  'relatively prime' 
+    a and b are rel. prime if their gcd is 1 (no CM)
+
+  congruences
+    a|b - look at the remainders
+    n|(b-a)
+      'generalized equality' a (three bars) b mod n
+
+    n = 3
+
+    11 congruent 2 mod 3 
+      3 | (11 -2)
+
+    4 congruent 1 mod 3
+      3 | (4 -1 )
+
+    5 cong. 2 mod 3
+
+    gauss asked - can we make this into a class
+      turns out if i take a num and div by three the remainder is - 0, 1 or 2
+      he goes on to build an arithmatic on it
+      Z_3
+
+      mod arith starts as we define operations on it
+
+      when gcd of something is 1 we can divide
+
+  modular exponensiation
+    2^5 cong x mod 5
+      x =?
+      32 minus multiple of 5 is 2
+      32 cong 2 mod 5
+
+  can we do logs?
+    opposite of exp.
+    discrete logs, modular logarithms
+
+    2^3 = 8
+
+    8 congt 1 mod 7
+
+    2^3 cong 1 mod 7
+
+    log2(1) = 3 mod 7
+
+    'funny thing' as you do base ten the numbers get bigger and bigger
+    cos of mod arithmatic, on high powers we go randomly back and forth
+
+    finding discrete log of large modulus is not easy
+    a ^ x cong b mod n
+    comp. difficult - discrete log problem
+
+    basis of public crypto
+
+
+Alice wants to send a msg to bob
+  need to swap keys, but haven't done so
+
+  I know what G and what N is
+
+  Alice picks a secret number X and compute g ^ X mod N
+  Alice sends to bob g ^ x mod N.
+  Bob picks a secret Y and computes g ^ Y mod N sends it to Alice
+
+  (N is some prime)
+
+  Alice performs (g ^ y)^X
+  Bob takes (g ^ x)^Y
+
+  and allows two parties to openly negotiate a key
+
+
+  Euler quotient function
+
+    phi(n) = # of positive integers < n that are relatively prime
+    phi(1) = 1
+    phi(2) = 1
+    phi(3) = 2
+    phi(4) = 2
+    phi(5) = 4
+    phi(6) = 2
+    phi(19) = 18 (if it's a prime, it is just n-1)
+
+    phi(p*q) it is (P-1)(q-1) where p and q are primes
+      Alice knows P and Q and shares either one. Trudy is forced to bruteforce it. One way trap door function.
+
+#nov9
+EEA
+where == means congruent
+
+a^-1 mod n = a^-1 belongs to { 0, 1, 2,..., n-1 }
+st a^-1 * a = a * a^-1 = 1 mod n
+
+n = 27, a = 3
+
+
+---
+a = 2, n = 7
+
+1.2 == 2 ~== mod 7
+2.2 == 4
+..
+3.6 == 6
+4.3 == 8 == 1 mod 7
+2^-1== 4 mod 7
+
+extending occluding algorithm -- find inverse of a number
+last non zero remainder is gcd
+
+#nov11
+
+hashes
+
+integruty
+
+conent/sequence/timing mod <-- integrity 
+
+integrity
+---------
+Encryption, MACs, Hashes
+
+encryption =
+{ symmetric, assym }
+sym can give you inegrity, if the decrypt fails
+but it requires a common secret key
+we also just want a very quick method
+
+if you just rely on encryption alone you can't really handle changes in patterns, you have to add structure. Usually add checksum.
+
+asym
+----
+expensive to implement
+
+
+MSG Authen Code
+----
+also known as keyed hash function
+crypto cehck sum using a common secret key
+does not provide a digital sig
+does not have to be reversible
+less vuln to attacks than sym key encryption counterparts
+
+produces a small fixed size block of data
+typically there are many msgs that produce the same MAC
+if we use an n bit MAC -> 2^n possible values < typical number of messages
+for a k-but key there are only 2^k possible keys
+
+brute force attacks of MACs
+let the key size be k and the MAC size be n with k > n
+trudy has access to plaintet and their MACs
+to find k he uses the following iterative brute force
+

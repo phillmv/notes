@@ -1,0 +1,47 @@
+
+
+
+
+Ideally, a feed reader should be more aggressive in two stances: culling uninteresting data and sorting interesting items first. It is helpful to think of the different thresholds of importance of the stuff that we read. The vast majority of information is relatively unimportant and is either used for entertainment or for the exchange of social capital. To use Twitter as an example, a given user is far likelier to be more interested in what her immediate friends have to say than the status updates of various acquaintances. If this user is particularly constrained for time, it would be advantageous to distinguish between the more important tweets (status updates from close friends, rich in social capital) and those that are strictly noise or relatively unimportant (status updates from rarely seen acquaintances). 
+
+
+
+ Most feed aggregators can be roughly categorized as being either client applications, or a part of the growing “social media”. Most client applications, like NewsNetWire, Google Reader or Bloglines operate as simple queues 
+Traditionally, this filtering process has been the role of curators. Tasked with filling front pages of newspapers, editors engage in a careful process of deciding what deserves more or less attention. 
+Almost all feed aggregators  or social services. On one end, we have relatively dumb software clients that collect syndication feeds and present their items as a queue which can emptied and replenished over time. These tools, either desktop applications like NewsNetWire or services like Google Reader or Bloglines, tend to be fairly simplistic, and other than a few grouping and simple sorting options they leave the user alone to fend for herself. On the other end, we have what can be broadly described as the "social media". Sites like Reddit, Digg or Slashdot accumulate submissions from their user base and utilize their collective judgements to promote one form of content over another. Although they prominently feature the ability to explicitly judge content by voting it up or down, typically no effort is made to tailor results to any individual user.
+
+This filtering role has typically been fulfilled by curators. Carefully selecting out the noteworthy from the vast majority of noisy content, editors have traditionally functioned as gatekeepers of knowledge. However, this model suffers from a few problems, chief among them is the fact that human filtering does not scale. More importantly, editors are by definition forced to cater, predicated on their own tastes and biases, to the widest demographic possible. Targeting the individual is thus wide open for an algorithmic approach.
+
+
+In the middle of the spectrum we can slot projects like PostRank and Fever. PostRank is a service that uses what they describe as "engagement filtering" to decide which content is currently most popular and relevant, while Fever is a client application that distinguishes between high and low noise feeds. While they come much closer to bridging the gap, they both leave a bit to be desired in their specific implementations. Feed is currently not intelligent enough(http://al3x.net/2009/07/18/fever-and-the-future-of-feed-readers.html) to adequately solve our interface problems and PostRank is more engaged in a top-down solution.
+
+Ideally, a feed reader should be more aggressive in two stances: culling uninteresting data and sorting interesting items first. It is helpful to think of the different thresholds of importance of the stuff that we read. The vast majority of information is relatively unimportant and is either used for entertainment or for the exchange of social capital. To use Twitter as an example, a given user is far likelier to be more interested in what her immediate friends have to say than the status updates of various acquaintances. If this user is particularly constrained for time, it would be advantageous to distinguish between the more important tweets (status updates from close friends, rich in social capital) and those that are strictly noise or relatively unimportant (status updates from rarely seen acquaintances). 
+
+
+More recently, as the term "social media" became a buzzword and spawned a whole cottage industry of consultants and experts we've seen a few projects emerge that try to bridge the gap. Most interesting among these are [Fever](http://feedafever.com/) and PostRank(http://www.postrank.com/). Fever 
+
+
+In recent years, the term "social media" has expanded to become a catch-all phrase that describes an
+
+#user satiation
+
+main problem being that they do not discard useless information as vigorously nor do they attempt to learn your preferences - canonical example being twitter/facebook, foreign affairs, programming languages on reddit
+
+Through their selection of the noteworthy and their rejection of the vast majority of noisy and unworthy contributions, editors have traditionally functioned as the gatekeepers of our collective knowledge. However, this model faces some problems. First and for all, as seen in the ongoing collapse of the newspaper industry, human filtering does not scale. More importantly, people are subject to a variety of biases and the intrisic need to filter for the widest demographic possible. f 
+
+
+gained
+digest
+
+We are quickly approaching the cognitive threshold for the maximum quantity of feeds and items we can consume in any timeframe, our problem can be state simply. How can we increase the amount of useful information we consume without substantially (or at all) increasing the amount of effort we invest in processing it?
+
+ To make matters worse, the values associated with any of these attributes will also vary dramatically from user to user.  Our problem can thus be stated simply: how can we increase the amount of useful information we consume without dramatically increasing the amount of time invested in processing it?
+
+In simpler times, we might resort to curators, or some form of gate keepers to perform this function of filtering for us. A classic example of this is the newspaper editor deciding which stories deserve to go on the front page and which are dropped altogether. Unfortunately for us, this method tends to succumb to various biases and is a little hard to scale satisfactorily.  This leaves us with an algorithmic approach, and in the world of feed readers there are essentially two variants. On the one hand, we have plain applications that present content in the form of a queue that is eventually drained of information, and the notion of 'aggregators' which slurp up feeds and perform some form of ranking invariably based on collective, "social" criteria.
+
+The latter 
+
+The solution is to impose some form of filter on our inputs. Traditionally, this has been accomplished by some succession of curators and gate keepers, but unfortunately this method does not scale satisfactorily.  At the same time, our current crop of tools and user interfaces,  now entering their third or fourth generation, do little to directly mitigate these issues. 
+
+Feed readers, or aggregators, can be broadly categorized placed into two categories. At one end of the spectrum, we have the built in RSS support in most modern browsers which displays feed items as individual links 
+
